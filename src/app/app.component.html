@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+<div *ngIf="session">
+  <app-publisher [session]="session"></app-publisher>
+  <div id="screen-preview"></div>
+  <app-subscriber *ngFor="let stream of streams" [stream]="stream" [session]="session"></app-subscriber>
+</div>
